@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Install Ufw and enable ports 22, 80, 443 
+
+apt-get -y install ufw
+ufw enable
+ufw allow 22/tcp
+ufw allow 443/tcp
+ufw allow 80/tcp
